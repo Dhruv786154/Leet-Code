@@ -45,9 +45,11 @@ public:
         int pivot = getPivot(nums,n);
         if(target >= nums[pivot]  && target <= nums[n-1])
         {
+            // BS on second line
             return binarySearch(nums,pivot,n-1,target);
         }
         else{
+            // BS on first line 
             return binarySearch(nums,0,pivot-1,target);
         }
     }
