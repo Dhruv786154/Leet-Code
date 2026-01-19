@@ -6,6 +6,10 @@ public:
         int e = n;
 
         long long int ans = -1;
+        if(n == 1)
+        {   
+            return 1;
+        }
         if(n == 0)
         {
             return 0;
