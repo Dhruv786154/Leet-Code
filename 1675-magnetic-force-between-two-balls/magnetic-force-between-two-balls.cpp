@@ -3,7 +3,7 @@ bool isPosition(vector<int>& position, int m,int mid)
     int ball = 1;
     int lastPos = position[0];
     
-    for(int i=0;i<position.size();i++)
+    for(int i=1;i<position.size();i++)
     {
         if(position[i] - lastPos >= mid)
         {
@@ -21,7 +21,6 @@ class Solution {
 public:
     int maxDistance(vector<int>& position, int m) {
         int s=0;
-        int maxi = -1;
         int n = position.size();
         sort(position.begin(),position.end());
         int e = position[n-1] - position[0];
