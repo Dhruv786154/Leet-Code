@@ -2,8 +2,8 @@ class Solution {
 public:
     vector<int> productExceptSelf(vector<int>& nums) {
         int n = nums.size();
-        int left[n];
-        int right[n];
+        vector<int> left(n);
+        vector<int> right(n);
 
         left[0] = 1;
         right[n-1] = 1;
