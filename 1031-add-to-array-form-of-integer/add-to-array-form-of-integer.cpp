@@ -22,18 +22,10 @@ public:
             carry = sum/10;
          
         }
-        if(carry > 0)
-        {
-            ans.push_back(carry);
-        }   
 
         // Reverse the ans vector
-           int s = 0;
-            int e = ans.size()-1;
-            while(s<e)
-            {
-                swap(ans[s++],ans[e--]);
-            }
+        reverse(ans.begin(),ans.end());
+        
         return ans;
     }
 };
