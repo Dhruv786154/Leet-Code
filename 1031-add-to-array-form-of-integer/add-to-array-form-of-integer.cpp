@@ -24,8 +24,15 @@ public:
         }
 
         // Reverse the ans vector
-        reverse(ans.begin(),ans.end());
-        
+           int s = 0;
+            int e = ans.size()-1;
+            while(s<e)
+            {
+                swap(ans[s++],ans[e--]);
+            }
         return ans;
+        //reverse(ans.begin(),ans.end());
+        
+        // return ans;
     }
 };
