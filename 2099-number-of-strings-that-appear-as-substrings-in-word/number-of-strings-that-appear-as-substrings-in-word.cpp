@@ -4,7 +4,7 @@ public:
         int count = 0;
         for(int i=0;i<patterns.size();i++)
         {
-            if(word.find(patterns[i]) != string::npos)
+            if(word.find(patterns[i]) != -1)
             {
                 count++;
             }
