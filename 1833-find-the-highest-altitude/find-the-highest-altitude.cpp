@@ -9,7 +9,6 @@ public:
             highest = max(current,highest);
         }
         return highest;
-
-        
+       
     }
 };
